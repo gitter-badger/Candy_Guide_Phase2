@@ -1,7 +1,5 @@
-angular.module('starter.services', [])
+candyService.factory('Chats', function() {
 
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
 
   // Some fake testing data
   var chats = [{
