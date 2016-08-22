@@ -1,1 +1,3 @@
-candyCtrl.controller('chatsCtrl', function($scope) {});
+candyCtrl.controller('chatsCtrl', function($scope) {
+
+});

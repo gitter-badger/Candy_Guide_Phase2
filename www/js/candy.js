@@ -61,11 +61,11 @@ var candy = angular.module('candy', ['ionic', 'candy.controllers', 'candy.servic
     })
 
   .state('tab.chat-detail', {
-      url: '/chats/candy',
+      url: '/chats/:chatId',
       views: {
         'tab-chats': {
           templateUrl: 'templates/chat-detail.html',
-          controller: 'chatDetailCtrl'
+          controller: 'chatDetailsCtrl'
         }
       }
     })
