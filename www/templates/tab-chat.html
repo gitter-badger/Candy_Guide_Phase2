@@ -1,4 +1,4 @@
-<ion-view view-title="Friends">
+<ion-view view-title="Chats">
     <ion-nav-buttons side="primary">
         <button class="button button-icon ion-plus"></button>
     </ion-nav-buttons>
@@ -11,6 +11,8 @@
             <ion-item class="item-remove-animate item-avatar item-icon-left item-icon-right" ng-repeat="chat in chats" href="#/tab/chats/{{chat.id}}">
                 <i class="icon ion-person-stalker"></i>
                 <h2>{{chat.name}}</h2>
+                <p>{{chat.lastText}}</p>
+                <span class="badge badge-assertive">{{chat.unReadMessages}}</span>
                 <i class="icon ion-chevron-right icon-accessory"></i>
                 <ion-option-button class="button-assertive" ng-click="remove(chat)">
                     Delete

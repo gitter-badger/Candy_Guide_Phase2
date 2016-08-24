@@ -1,1 +1,5 @@
-candyCtrl.controller('friendsCtrl', function($scope) {});
+candyCtrl.controller('friendsCtrl', function($scope, chats) {
+
+    $scope.chats = Chats.all();
+
+});
