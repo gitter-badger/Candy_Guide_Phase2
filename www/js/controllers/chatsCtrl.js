@@ -1,8 +1,8 @@
 candyCtrl.controller('chatsCtrl', function($scope, chats) {
 
-    $scope.chats = Chats.all();
+    $scope.chats = chats.all();
     $scope.remove = function(chat) {
-        Chats.remove(chat);
+        chats.remove(chat);
     };
 
 });
