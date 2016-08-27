@@ -8,13 +8,13 @@
 
     <ion-content>
         <ion-list>
-            <ion-item class="item-remove-animate item-avatar item-icon-left item-icon-right" href="#/tab/chats/23">
+            <ion-item class="item-remove-animate item-avatar item-icon-left item-icon-right" ng-repeat="chat in chats" href="#/tab/chats/{{chat.id}}">
                 <i class="icon ion-person-stalker"></i>
-                <h2>Candy</h2>
-                <p>Where are you?</p>
-                <span class="badge badge-assertive">23</span>
+                <h2>{{chat.name}}</h2>
+                <p>{{chat.lastText}}</p>
+                <span class="badge badge-assertive">{{chat.unReadMessages}}</span>
                 <i class="icon ion-chevron-right icon-accessory"></i>
-                <ion-option-button class="button-assertive">
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
                     Delete
                 </ion-option-button>
             </ion-item>
