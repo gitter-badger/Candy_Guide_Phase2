@@ -70,13 +70,9 @@ var candy = angular.module('candy', ['ionic', 'candy.controllers', 'candy.servic
     })
 
   .state('landing', {
-    url: '/landing',
-    views: {
-      'landing': {
-        templateUrl: 'templates/landing.html',
-        controller: 'landingCtrl'
-      }
-    }
+      url: '/landing',
+      templateUrl: 'templates/landing.html',
+      controller: 'landingCtrl'
   })
     
   .state('tab.account', {
