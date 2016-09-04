@@ -1,5 +1,23 @@
+<!--コードきれいにする-->
+
     <ion-view view-title="landing">
-        <ion-content>
-            <a class="button button-icon icon ion-social-facebook" ng-click="login()" href="#/tab"></a>
+
+        <ion-content style="background-image : url(../img/landing_background.jpg);">
+            <div style="text-align: center !important;position: absolute;width: 100%;top: 80px;">
+                <img src="../img/AppName-logo.png" style="width:300px;">
+            </div>
+            <div style="text-align: center !important;position: absolute;width: 100%;top: 280px;">
+                <p>Share location with your friends</p>
+            </div>
+            <a class="button button-block button-positive" ng-click="login()" href="#/tab" style="position: absolute;bottom: 50px;width: 100%;">
+                <i class="button button-icon icon ion-social-facebook"></i>
+                Login with Facebook
+            </a>
+            <style>
+                .scroll{
+                    height:100%;
+                }
+            </style>
         </ion-content>
+
     </ion-view>

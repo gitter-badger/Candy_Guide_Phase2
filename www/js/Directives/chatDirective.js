@@ -1,0 +1,1 @@
+candyDirective.directive('chatDirective', function() {});
