@@ -18,9 +18,9 @@
         </ion-side-menu>
     </ion-side-menus>
 
-    <ion-content style="z-index:1;">
-        <div style="width:100%;height:80vh" id="map_canvas"></div>
-        <span class="badge badge-assertive">{{test}}</span>
-        <i class = "icon icon ion-compass"></i>
+    <ion-content style="z-index:1;background-color: rgba(0, 0, 0, 0) !important;background: rgba(0, 0, 0, 0) !important;" scroll="false" >
+        <div id="map_canvas" data-tap-disabled="true" style="width:100%;height:60vh;border: 1px solid;position: absolute;z-index:1000000;"></div>
+        <!--<button id="button">Full Screen</button>
+        <span class="badge badge-assertive">{{test}}</span>-->
     </ion-content>
 </ion-view>
