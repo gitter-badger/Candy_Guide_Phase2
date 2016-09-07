@@ -3,25 +3,28 @@ candyCtrl.controller('chatDetailsCtrl', function($scope, $ionicPlatform, $cordov
         plugin.google.maps.Map.isAvailable(function (isAvailable, message) {
             if (isAvailable) {
                 alert('利用可能:' + isAvailable);
-                var map = plugin.google.maps.Map.getMap(angular.element(document.querySelector('map_canvas')),
-                    {
-                        center: new plugin.google.maps.LatLng("35.690921", "139.700258"),  
-                        zoom: 20
-                     }
+                var map = plugin.google.maps.Map.getMap(document.getElementById('map_canvas'),
+                        {
+                            'camera': {
+                                'latLng': new plugin.google.maps.LatLng(41.796875,140.757007),
+                                'tilt': 50,
+                                'zoom': 11,
+                                'bearing': 50
+                            }
+                        }
                 );
+                map.addEventListener(plugin.google.maps.event.MAP_CLICK,function(){
+                    alert("map ????  pass!!!!!!!!!!!!!!");
+                    map.showDialog();
+                    //map.setDiv(div);
+                });
             } else {
                 alert(message);
             }
         });
         
         
-        
         /*
-        map.addEventListener(plugin.google.maps.event.MAP_CLICK,function(){
-            alert("map ????  pass!!!!!!!!!!!!!!");
-            map.showDialog();
-            //map.setDiv(div);
-        });
         $cordovaDeviceOrientation.getCurrentHeading().then(function(result) {
            var magneticHeading = result.magneticHeading;
            $scope.test = result.magneticHeading;
