@@ -7,14 +7,14 @@ candyCtrl.controller('chatDetailsCtrl', function($scope, $ionicPlatform, $cordov
                         {
                             'camera': {
                                 'latLng': new plugin.google.maps.LatLng(41.796875,140.757007),
-                                'tilt': 50,
-                                'zoom': 11,
+                                'tilt': 60,
+                                'zoom': 18,
                                 'bearing': 50
                             }
                         }
                 );
                 map.addEventListener(plugin.google.maps.event.MAP_CLICK,function(){
-                    alert("map ????  pass!!!!!!!!!!!!!!");
+                    alert("map click!!!!!!!!!!!!!!!!");
                     map.showDialog();
                     //map.setDiv(div);
                 });
