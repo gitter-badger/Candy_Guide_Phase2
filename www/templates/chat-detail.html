@@ -1,3 +1,4 @@
+<link href="css/chatDetail.css" rel="stylesheet">
 <ion-view view-title="chatsDetail">
     <ion-nav-buttons side="primary">
         <button menu-toggle="left" class="button button-icon ion-person-stalker"></button>
@@ -5,22 +6,7 @@
     <ion-nav-buttons side="secondary">
         <button class="button button-clear button-positive">edit</button>
     </ion-nav-buttons>
-
-    <ion-side-menus>
-        <ion-side-menu-content>
-            Content!
-            <button ng-click="toggleLeftSideMenu()">
-                Toggle Left Side Menu
-            </button>
-        </ion-side-menu-content>
-        <ion-side-menu side="left">
-            Left Menu!
-        </ion-side-menu>
-    </ion-side-menus>
-
-    <ion-content style="z-index:1;background-color: rgba(0, 0, 0, 0) !important;background: rgba(0, 0, 0, 0) !important;" scroll="false" >
-        <div id="map_canvas" data-tap-disabled="true" style="width:100%;height:60vh;border: 1px solid;position: absolute;z-index:1000000;"></div>
-        <!--<button id="button">Full Screen</button>
-        <span class="badge badge-assertive">{{test}}</span>-->
+    <ion-content>
+        <div id="map_canvas"></div>
     </ion-content>
 </ion-view>
