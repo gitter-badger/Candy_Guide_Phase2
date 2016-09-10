@@ -1,5 +1,7 @@
 # ?
 
+[![Join the chat at https://gitter.im/Candy_Guide_Phase2/Lobby](https://badges.gitter.im/Candy_Guide_Phase2/Lobby.svg)](https://gitter.im/Candy_Guide_Phase2/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Discription
 
 This is a launching of realtime location sharing service.
