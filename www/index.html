@@ -12,6 +12,18 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <!-- ionic/firebase js -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAy7oZMLcWhOVO__x_2DfZnHadtAieOWyU",
+            authDomain: "candyguide-phase2.firebaseapp.com",
+            databaseURL: "https://candyguide-phase2.firebaseio.com",
+            storageBucket: "candyguide-phase2.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
