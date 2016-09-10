@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/chatDetail.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -28,6 +29,7 @@
     <script src="js/controllers/friendsCtrl.js"></script>
     <script src="js/controllers/landingCtrl.js"></script>
     <script src="js/services/chatService.js"></script>
+    <script src="js/services/chatdetailService.js"></script>
 
   </head>
   <body ng-app="candy">
@@ -35,7 +37,7 @@
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
+      <ion-nav-back-button ng-click = "showtab()">
       </ion-nav-back-button>
     </ion-nav-bar>
     <!--
