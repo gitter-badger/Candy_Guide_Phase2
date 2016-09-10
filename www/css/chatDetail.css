@@ -1,11 +1,6 @@
 /* Empty. Add your own CSS if you like */
-
-*{
-    background: rgba(0, 0, 0, 0);
-}
-
-#map_canvas{
+#chatsDetail_map_canvas{
     width:100%;
-    height:85vh;
+    height:92vh;
     background: rgba(0, 0, 0, 0) !important;
 }
